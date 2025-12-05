@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {JoditProConfig, NgxJoditProComponent} from 'ngx-jodit-pro';
-import {FormBuilder} from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 interface FormWithJoditEditor {
   editor: string;
@@ -12,6 +12,11 @@ declare const Jodit: any;
   selector: 'jodit-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  imports: [
+    FormsModule,
+    NgxJoditProComponent,
+    ReactiveFormsModule
+  ]
 })
 export class AppComponent {
   value = 'Some text';

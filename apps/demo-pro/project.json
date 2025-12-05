@@ -80,7 +80,8 @@
       "defaultConfiguration": "development",
       "options": {
         "port": 4201
-      }
+      },
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -95,7 +96,8 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/apps/demo"],
       "options": {
-        "jestConfig": "apps/demo-pro/jest.config.ts"
+        "jestConfig": "apps/demo-pro/jest.config.ts",
+        "tsConfig": "apps/demo-pro/tsconfig.spec.json"
       }
     }
   }

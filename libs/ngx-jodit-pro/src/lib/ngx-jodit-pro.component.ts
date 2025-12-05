@@ -11,7 +11,7 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import {CommonModule} from '@angular/common';
+
 import {IViewOptionsPro} from 'jodit-pro/types/types/view';
 import {IViewOptions} from 'jodit/types/types';
 import {IJodit} from 'jodit/types/types/jodit';
@@ -24,7 +24,7 @@ export type JoditProConfig = Partial<IViewOptions & IViewOptionsPro & Record<str
 @Component({
   selector: 'ngx-jodit-pro',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './ngx-jodit-pro.component.html',
   providers: [{
     provide: NG_VALUE_ACCESSOR,

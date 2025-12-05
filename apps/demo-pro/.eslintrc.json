@@ -24,14 +24,13 @@
             "prefix": "jodit",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {
       "files": ["*.html"],
-      "extends": [
-        "plugin:@nx/angular-template"
-      ],
+      "extends": ["plugin:@nx/angular-template"],
       "rules": {}
     }
   ]
