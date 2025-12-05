@@ -6,7 +6,7 @@ import 'jodit/esm/plugins/source/source.js';
 import 'jodit/esm/plugins/resizer/resizer.js';
 
 import {Component, ViewChild} from '@angular/core';
-import {FormBuilder} from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {Jodit} from 'jodit';
 import de from 'jodit/esm/langs/de.js';
 import {JoditConfig, NgxJoditComponent} from 'ngx-jodit';
@@ -21,6 +21,11 @@ interface FormWithJoditEditor {
   selector: 'jodit-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  imports: [
+    NgxJoditComponent,
+    FormsModule,
+    ReactiveFormsModule
+  ]
 })
 export class AppComponent {
   value = 'Some text';

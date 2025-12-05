@@ -1,4 +1,4 @@
-import {CommonModule} from '@angular/common';
+
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
@@ -21,7 +21,7 @@ import {JoditConfig} from './types';
 @Component({
   selector: 'ngx-jodit',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './ngx-jodit.component.html',
   providers: [
     {
